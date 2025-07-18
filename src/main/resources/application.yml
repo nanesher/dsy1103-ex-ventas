@@ -28,6 +28,6 @@ server:
 
 
 productos-api-url: http://localhost:8081/productos/
-pagos-api-url: http://localhost:8082/pagos/
+pagos-api-url: http://localhost:8082/pagos
 usuarios-api-url: http://localhost:8083/usuarios/
-envios-api-url: http://localhost:8084/envios/
+envios-api-url: http://localhost:8084/envios
