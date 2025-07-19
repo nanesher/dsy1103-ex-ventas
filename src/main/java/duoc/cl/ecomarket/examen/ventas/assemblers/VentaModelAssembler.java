@@ -33,8 +33,8 @@ public class VentaModelAssembler implements RepresentationModelAssembler<Venta, 
                 linkTo(methodOn(VentaController.class).updateVenta(venta.getVentaId(),null)).withRel("Actualizar la venta(con metodo put y con body)"),
                 Link.of(productosApiUrl + venta.getProductoId()).withRel("Producto de la venta"),
                 Link.of(usuariosApiUrl + venta.getUsuarioId()).withRel("Usuario de la venta"),
-                Link.of(pagosApiUrl + venta.getPagoId()).withRel("Pago de la venta"),
-                Link.of(enviosApiUrl + venta.getEnvioId()).withRel("Envio de la venta"));
+                Link.of(pagosApiUrl +"/" +  venta.getPagoId()).withRel("Pago de la venta"),
+                Link.of(enviosApiUrl + "/" + venta.getEnvioId()).withRel("Envio de la venta"));
     }
 
 }
